@@ -1,0 +1,367 @@
+body {
+    margin: 0;
+    font-family: "Robodo", sans-serif;
+    background-color: #f4f4f4;
+}
+
+.sidebar {
+    width: 250px;
+    background-color: #fff9e6;
+    color: #333;
+    position: fixed;
+    height: 100%;
+    padding: 20px;
+    border-right: 1px solid #ddd;
+}
+
+.sidebar-header h1 {
+    margin: 0;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.profile {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.profile img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.sidebar-menu {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar-menu li {
+    margin-bottom: 15px;
+}
+
+.sidebar-menu li a {
+    color: #333;
+    text-decoration: none;
+    display: block;
+    font-size: 18px;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.sidebar-menu li a:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.sidebar-menu li.active a {
+    font-weight: bold;
+    background-color: rgba(255, 202, 40, 0.2);
+}
+
+.main-content {
+    margin-left: 300px;
+    padding: 20px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #fff;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+
+.header input[type="text"] {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 300px;
+    font-size: 16px;
+}
+
+.header-right span {
+    margin-left: 20px;
+    cursor: pointer;
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.stats {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.stat-box:last-child {
+    margin-right: 0;
+}
+
+.stat-box {
+    background-color: #fff;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    flex: 1;
+    margin-right: 20px;
+    font-size: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.stat-box svg {
+    margin-bottom: 10px;
+    color: #ffca28;
+}
+
+.stat-box p {
+    margin: 0;
+    color: #777;
+}
+
+.stat-box h2 {
+    margin: 10px 0;
+    font-size: 32px;
+    font-weight: 500;
+    color: #333;
+}
+
+.charts {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.chart-box {
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    flex: 1;
+    margin-right: 20px;
+    height: 350px;
+}
+
+.chart-box:last-child {
+    margin-right: 0;
+}
+
+.chart-box h3 {
+    margin-bottom: 15px;
+    font-weight: 500;
+    font-size: 18px;
+    color: #333;
+}
+
+.bottom-section {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.calendar,
+.todo-list {
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    flex: 1;
+    margin-right: 20px;
+    height: 350px;
+}
+
+.todo-list {
+    margin-right: 0;
+}
+
+.calendar-widget {
+    text-align: center;
+}
+
+.calendar-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.calendar-header h4 {
+    margin: 0;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.calendar table {
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: fixed;
+}
+
+.calendar table th,
+.calendar table td {
+    padding: 8px;
+    text-align: center;
+    border: 1px solid #ddd;
+    font-size: 14px;
+}
+
+.calendar table td.active {
+    background-color: #ffca28;
+    color: #fff;
+    border-radius: 50%;
+}
+
+.todo-widget {
+    text-align: center;
+}
+
+.todo-widget input[type="text"] {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 70%;
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+.todo-widget button {
+    padding: 10px;
+    background-color: #ffca28;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 10px;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.todo-widget ul {
+    list-style: none;
+    padding: 0;
+}
+
+.todo-widget li {
+    text-align: left;
+    margin-bottom: 8px;
+    font-size: 16px;
+}
+
+.detail-btn {
+    background-color: #ffca28;
+    color: #fff;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.remove-all-btn {
+    width: 70%;
+    margin: 0 auto;
+    display: block;
+    background-color: #ffca28;
+}
+#removeBtn {
+    margin-left: 40%;
+}
+
+.footer {
+    background-color: #f4f4f4;
+    padding: 20px;
+    box-shadow: 0 -1px 3px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+    border-radius: 10px 10px 0 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    bottom: 0;
+    width: 150%;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.footer-left,
+.footer-right {
+    color: #777;
+    font-size: 14px;
+}
+
+.footer-left a,
+.footer-right a {
+    color: #ffca28;
+    text-decoration: none;
+}
+
+.footer-left a:hover,
+.footer-right a:hover {
+    text-decoration: underline;
+}
+
+.footer-right {
+    text-align: right;
+}
+
+#calendar-widget {
+    height: 350px;
+    width: 100%;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.fc .fc-daygrid-body {
+    flex-grow: 1;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.fc-daygrid-day-frame {
+    flex-grow: 1;
+    height: calc(100% / 6);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.fc-daygrid-day {
+    height: auto;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.fc .fc-toolbar.fc-header-toolbar {
+    margin-bottom: 10px;
+}
+
+.fc .fc-toolbar.fc-header-toolbar .fc-button {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    color: #ffca28;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    border-radius: 5px;
+}
+
+.fc .fc-toolbar.fc-header-toolbar .fc-button:hover {
+    background-color: #f1f1f1;
+}
